@@ -1,0 +1,20 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "Admin Dashboard",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "author": "Liyana",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.80.6"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "autoprefixer": "^10.4.20",
+    "bootstrap": "^5.3.3",
+    "postcss-cli": "^11.0.0"
+  }
+}
