@@ -13,13 +13,13 @@
         <!-- Sidebar -->
         <div class="sidebar">
             <div class="nav-header">
-                <h2>My Navigation</h2>
+                <h2>Admin Dashboard</h2>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home">Dashboard</a></li>
+                <li><a href="#about">User</a></li>
+                <li><a href="#services">Product</a></li>
+                <li><a href="#contact">Sales</a></li>
             </ul>
         </div>
 
@@ -41,73 +41,60 @@
           
           </nav>        
 
-            <h1>Welcome to My Page</h1>
+            <h3>Welcome Mrs Wonyoung!</h3>
             <p>Content goes here...</p>
 
             <!-- Card Section -->
             <div class="card-container">
                 <div class="card">
-                    <img src="image1.jpg" class="card-img-top" alt="Image 1">
                     <div class="card-body">
-                        <h5 class="card-title">Card Title 1</h5>
+                        <h5 class="card-title">Total Products Sold</h5>
                         <p class="card-text">Card description goes here.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="image2.jpg" class="card-img-top" alt="Image 2">
                     <div class="card-body">
-                        <h5 class="card-title">Card Title 2</h5>
+                        <h5 class="card-title">Total Sales</h5>
                         <p class="card-text">Card description goes here.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="image3.jpg" class="card-img-top" alt="Image 3">
                     <div class="card-body">
-                        <h5 class="card-title">Card Title 3</h5>
+                        <h5 class="card-title">Revenue</h5>
                         <p class="card-text">Card description goes here.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Table Section -->
-            <div class="table-responsive">
-              <table class="product-table table table-striped">
-                  <thead>
-                      <tr>
-                          <th>ID</th>
-                          <th id="name-header">Name <i id="sort-arrow" class="bi bi-arrow-down-up"></i></th>
-                          <th>Price</th>
-                          <th>Status</th>
-                          <th>Action</th>
-                      </tr>
-                  </thead>
-                  <tbody id="product-tbody">
-                      <!-- Dynamic content will be here -->
-                  </tbody>
-              </table>
+             <!-- Table Section -->
+              <div class="table-responsive">
+                <table class="product-table table table-striped">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th id="name-header">Name <i id="sort-arrow" class="bi bi-arrow-down-up"></i></th>
+                            <th>Price</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="product-tbody">
+                        <!-- Dynamic content will be here -->
+                    </tbody>
+                </table>
             </div>
 
-            <!-- Modal for viewing product details -->
-            <div class="modal fade" id="viewModal" tabindex="-1" role="dialog" aria-labelledby="viewModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                          <h5 class="modal-title" id="viewModalLabel">Product Details</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                          </button>
-                      </div>
-                      <div class="modal-body">
-                          <p><strong>Name:</strong> <span id="modal-product-name"></span></p>
-                          <p><strong>Price:</strong> <span id="modal-product-price"></span></p>
-                          <p><strong>Status:</strong> <span id="modal-product-status"></span></p>
-                      </div>
-                      <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      </div>
+            <!-- Modal for Viewing Product --> 
+            <div id="product-modal" class="modal">
+              <div class="modal-content">
+                  <span id="close-modal" class="close-btn">&times;</span>
+                  <h2>Product Details</h2>
+                  <div id="product-details">
+                      <!-- Product details will be populated here -->
                   </div>
               </div>
             </div>
+
         </div>
     </div>
 

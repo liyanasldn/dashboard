@@ -1,39 +1,91 @@
-// Variables for reusable styles
-$primary-color: #3498db;
-$hover-bg: #ddd;
-$arrow-size: 12px;
-
-// Table Styling
-.table {
-  width: 100%;
-  margin: 20px 0;
-  border-collapse: collapse;
-  
-  th, td {
-    padding: 8px 12px;
-    border: 1px solid #ddd;
-    text-align: left;
-    cursor: pointer; // Change cursor to indicate header is clickable
-  }
-  
-  th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-  }
-  
-  th:hover {
-    background-color: $hover-bg;
-  }
-
-  // Style for sort arrow
-  #sort-arrow {
-    margin-left: 8px;
-    font-size: $arrow-size;
-    color: $primary-color;
-  }
+/* Styles for table */
+.product-table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Optional: adds rounded corners */
+    overflow: hidden; /* Ensures shadow doesn't spill outside */
 }
 
-// Optional: Add a hover effect for rows
+.product-table th, .product-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-table th {
+    background-color: #f4f4f4;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.product-table th:hover {
+    background-color: #9B7EBD; /* Header background turns black */
+    color: white; /* Text turns white */
+}
+
 .product-table tr:hover {
-  background-color: #f9f9f9;
+    background-color: #f1f1f1;
+}
+
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 50;
+    top: 0;
+    width: 100px; 
+    height: 100px; 
+    background-color: rgba(0, 0, 0, 0.728);
+    padding-top: 40px;
+}
+
+.modal-content {
+    background-color: #9B7EBD;
+    padding: 15px 30px;   
+    border: 1px solid #888;
+    width: 50%;       
+    max-width: 600px;     
+    height: 80%;          
+    overflow-y: auto;    
+    position: absolute;   
+    top: 50%;             
+    left: 50%;            
+    transform: translate(-50%, -50%); 
+}
+
+.close-btn {
+    color: #aaa;
+    font-size: 26px; 
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.view-btn {
+    background-color: #3B1E54;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+        background-color: white;
+        color: #3B1E54;
+        outline: 2px solid #3B1E54;
+    }
 }
