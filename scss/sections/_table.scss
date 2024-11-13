@@ -1,0 +1,39 @@
+// Variables for reusable styles
+$primary-color: #3498db;
+$hover-bg: #ddd;
+$arrow-size: 12px;
+
+// Table Styling
+.table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+  
+  th, td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    cursor: pointer; // Change cursor to indicate header is clickable
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  th:hover {
+    background-color: $hover-bg;
+  }
+
+  // Style for sort arrow
+  #sort-arrow {
+    margin-left: 8px;
+    font-size: $arrow-size;
+    color: $primary-color;
+  }
+}
+
+// Optional: Add a hover effect for rows
+.product-table tr:hover {
+  background-color: #f9f9f9;
+}
