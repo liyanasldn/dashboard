@@ -1,0 +1,25 @@
+.custom-box {
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffff; // Adjust text color as needed
+    background: {
+        image: url('your-image-url.jpg');
+        size: cover;
+        position: center;
+        repeat: no-repeat;
+        attachment: fixed;
+        blend-mode: overlay;
+    }
+    background-color: rgba(0, 0, 0, 0.6); // Fallback color if needed
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('your-image-url.jpg');
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    h3 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin: 0;
+    }
+}

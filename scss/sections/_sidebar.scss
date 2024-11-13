@@ -4,7 +4,7 @@
     color: #ffffff;
     padding: 1rem;
     min-width: 250px;
-    height: 100vh;
+    height: 130vh;
     transition: all 0.3s ease-in-out; 
     overflow: hidden;
     position: fixed; 
@@ -13,6 +13,8 @@
     
     .nav-header {
       margin-bottom: 2rem;
+      margin-left: 2em;
+      margin-top:2rem;
   
       h2 {
         font-size: 1.5rem;
@@ -21,25 +23,33 @@
   
     .nav-links {
       list-style: none;
-      padding: 0;
+      padding: 2rem;
+      padding: 15px 32px; 
   
       li {
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
+        
   
         a {
           color: #ffffff;
           text-decoration: none;
-  
+        
           &:hover {
-            text-decoration: underline;
+            text-decoration: none; 
+            color: #3B1E54; 
+            background-color: #ffffff; 
+            border-radius: 10px;
+            padding: 15px 32px; 
           }
         }
+        
+        
       }
     }
 
     @media (min-width: 769px) {
       position: static;
-      width: 250px;
+      width: 200px;
     }
   
     @media (max-width: 768px) {
